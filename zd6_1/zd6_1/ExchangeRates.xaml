@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zd6_1.ExchangeRates"
+             Title="Валюты"
+             StyleId="contentpage">
+    
+    <ContentPage.Resources >
+        <StyleSheet Source="./style.css" />
+    </ContentPage.Resources>
+    
+    <ContentPage.Content>
+
+        <StackLayout Orientation="Horizontal">
+
+            <StackLayout Orientation="Vertical">
+
+                <Label Text="Центробанк РФ:" Margin="10,10,0,0" StyleId="labelthree"/>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="USD" Margin="0,10,0,0" WidthRequest="80" StyleId="labeltwo"/>
+                    <Entry x:Name="usdEntry" Placeholder="Введите курс доллара" StyleId="entrytwo" TextChanged="usdEntry_TextChanged" Margin="0,0,0,0"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="EUR" StyleId="labeltwo"/>
+                    <Label x:Name="eurLabel" Text="86.000" StyleId="labelthree" TextDecorations="Underline" Margin="25,0,0,0"/>
+                </StackLayout>
+
+            </StackLayout>
+
+            <StackLayout Orientation="Vertical">
+                <Label Text="Сегодняшняя дата" StyleId="labeltwo" Margin="0,0,0,0"/>
+                <DatePicker Margin="0,-10,0,0" IsEnabled="False" FontAttributes="Bold" StyleId="datepicker"/>
+            </StackLayout>
+        </StackLayout>
+
+    </ContentPage.Content>
+    
+</ContentPage>

@@ -1,0 +1,74 @@
+﻿.login {
+    background-color: black;
+}
+
+^contentpage{
+    background-color: black;
+}
+
+
+#header {
+    margin: 90;
+    font-size: 45;
+    font-weight: 900;
+    color: white;
+}
+
+#entry {
+    background-color: white;
+    border-radius: initial 10;
+    color: black;
+}
+
+#entrytwo {
+    background-color: white;
+    border-radius: initial 10;
+    color: black;
+}
+
+#button {
+    margin-top: 30;
+    background-color: red;
+    color: white;
+}
+
+#else {
+    color: black;
+}
+
+#label {
+    color: white;
+    font-size: 18;
+}
+
+#labeltwo {
+    color: white;
+    font-size: 18;
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+
+#labelthree {
+    color: white;
+    font-size: 18;
+    font-weight: bold;
+}
+
+#labelfour {
+    color: white;
+    font-size: 18;
+}
+
+#picker{
+    color:black;
+    background-color: white;
+}
+
+#datepicker{
+    background-color: white;
+    
+}
+
+.LabelTextColor {
+    color: white;
+}
