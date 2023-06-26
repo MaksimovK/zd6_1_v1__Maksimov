@@ -1,36 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="zd6_1.LoginPage"
              StyleClass="login">
 
-    <ContentPage.Resources>
+    <CarouselPage.Resources>
         <StyleSheet Source="./style.css" />
-    </ContentPage.Resources>
+    </CarouselPage.Resources>
 
-    <StackLayout Orientation="Vertical" HorizontalOptions="Center">
-        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-            <Label x:Name="header" StyleId="header" Text="Welcome" FontSize="25"/>
+    <ContentPage>
+
+        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label x:Name="header" StyleId="header" Text="Welcome" FontSize="25"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Entry x:Name="loginEntry" Placeholder="Username" StyleId="entry" HorizontalOptions="Center" WidthRequest="400"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Entry x:Name="passwordEntry" Placeholder="Password" IsPassword="True" StyleId="entry" HorizontalOptions="Center" WidthRequest="400"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button x:Name="LogButton" StyleId="button" Text="Sign In" WidthRequest="400" Clicked="LogButton_Clicked"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" >
+                <CheckBox x:Name="CheckBox" Margin="0,0,0,0" HorizontalOptions="Center" Color="White"/>
+                <Label Text="Remember Me" Margin="0,5,0,0" HorizontalOptions="Center" StyleId="label"/>
+                <Label Text="I forgot!" Margin="150,5,0,0" StyleId="label"/>
+            </StackLayout>
+
         </StackLayout>
 
-        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-            <Entry x:Name="loginEntry" Placeholder="Username" StyleId="entry" HorizontalOptions="Center" WidthRequest="400"/>
-        </StackLayout>
+    </ContentPage>
 
-        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-            <Entry x:Name="passwordEntry" Placeholder="Password" IsPassword="True" StyleId="entry" HorizontalOptions="Center" WidthRequest="400"/>
-        </StackLayout>
 
-        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-            <Button x:Name="LogButton" StyleId="button" Text="Sign In" WidthRequest="400" Clicked="LogButton_Clicked"/>
-        </StackLayout>
-
-        <StackLayout Orientation="Horizontal" >
-            <CheckBox x:Name="CheckBox" Margin="0,0,0,0" HorizontalOptions="Center" Color="White"/>
-            <Label Text="Remember Me" Margin="0,5,0,0" HorizontalOptions="Center" StyleId="label"/>
-            <Label Text="I forgot!" Margin="150,5,0,0" StyleId="label"/>
-        </StackLayout>
-
-    </StackLayout>
-
-</ContentPage>
+</CarouselPage>

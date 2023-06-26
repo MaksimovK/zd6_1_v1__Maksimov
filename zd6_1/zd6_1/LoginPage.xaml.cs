@@ -10,7 +10,7 @@ using Xamarin.Forms.Xaml;
 namespace zd6_1
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class LoginPage : ContentPage
+    public partial class LoginPage : CarouselPage
     {
         string login;
         string password;
